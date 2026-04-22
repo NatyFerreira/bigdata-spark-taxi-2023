@@ -1,0 +1,31 @@
+cat << 'EOF' > .gitignore
+# Dados pesados
+*.parquet
+*.csv
+*.snappy.parquet
+*.json
+*.log
+
+# Diretórios Parquet
+*parquet/
+
+# Spark checkpoints
+checkpoint/
+spark-warehouse/
+
+# VS Code
+*.code-workspace
+.vscode/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# MacOS
+.DS_Store
+EOF
